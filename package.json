@@ -1,0 +1,22 @@
+{
+  "name": "typescript_learning",
+  "version": "1.0.0",
+  "description": "typescript learning basic to intermediate",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArifulIslamPolash/typescript_learning.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArifulIslamPolash/typescript_learning/issues"
+  },
+  "homepage": "https://github.com/ArifulIslamPolash/typescript_learning#readme",
+  "devDependencies": {
+    "typescript": "^4.9.3"
+  }
+}
