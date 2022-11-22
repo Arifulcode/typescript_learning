@@ -1,14 +1,14 @@
 //User defined type : array, enum , classes, interface 
 
-let personId: (number | string | boolean);
+let Id: (number | string | boolean);
 
 
-personId = "1001";
-personId = 1001;
-personId = true;
+Id = "1001";
+Id = 1001;
+Id = true;
 
-function displayPersonInfo(personId){
-    console.log(personId);
+function displayPersonInfo(Id){
+    console.log(Id);
 }
 
 displayPersonInfo(1);
