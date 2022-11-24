@@ -13,37 +13,34 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-var client = /** @class */ (function () {
-    function client(name, age) {
+// abstract  class must be use abstract keyword.
+// must be use one abstract method in abstract class.
+// must be use abstract method in extends retailer class 
+// abstract method don't use body part 
+// abstract method can not call class object call
+var consumer = /** @class */ (function () {
+    function consumer(name, age) {
         this.name = name;
         this.age = age;
     }
-    client.prototype.display = function () {
-        console.log("client_name: ".concat(this.name, ", client_age: ").concat(this.age));
-    };
-    return client;
+    return consumer;
 }());
-var customer = /** @class */ (function (_super) {
-    __extends(customer, _super);
+var retailer = /** @class */ (function (_super) {
+    __extends(retailer, _super);
     // must be use constructor function
-    function customer(name, age, customerId, email) {
+    function retailer(name, age, customerId, email) {
         var _this = _super.call(this, name, age) || this;
         _this.customerId = customerId;
         _this.email = email;
         return _this;
     }
-    customer.prototype.display = function () {
+    retailer.prototype.display = function () {
         console.log("client_name: ".concat(this.name, ", client_age: ").concat(this.age, ", customer_id: ").concat(this.customerId, ", client_Email: ").concat(this.email, ","));
     };
-    return customer;
-}(client));
-var customer1 = new customer("Ahammed Ali", 59, 100001, "customer@gmail.com");
-customer1.display();
-// let client2 = new client("Lilufa Yesmin", 42);
-// client2.display();
-// let client3 = new client("Ariful Islam", 29);
-// client3.display();
-// let client4 = new client("Alpona Khatun", 23);
-// client4.display();
-// let client5 = new client("Imran Hossain", 19);
-// client5.display();
+    return retailer;
+}(consumer));
+var retailer1 = new retailer("Ahammed Ali", 59, 100001, "customer@gmail.com");
+retailer1.display();
+// can not make object in main class
+// let client7 = new consumer("Lilufa Yesmin", 42);
+// client7.display();
