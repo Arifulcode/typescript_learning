@@ -5,7 +5,7 @@
 // private: can access own class.
 // protected: inherit class can access this property(but class er bahiree can not access )
 // private property k jodi access korte hoi set and get kore terpor access korte hobe
-class consumer {
+class consumerTwo {
     constructor(name, age) {
         this.name = name;
         this.age = age;
@@ -15,7 +15,7 @@ class consumer {
     }
     ;
 }
-class retailer extends consumer {
+class retailerTwo extends consumer {
     constructor(name, age, customerId, email) {
         super(name, age);
         this.customerId = customerId;
@@ -31,10 +31,10 @@ class retailer extends consumer {
         return this.email;
     }
 }
-let retailer1 = new retailer("Ahammed Ali", 59, 100001, "customer@gmail.com");
+let retailerone = new retailerTwo("Ahammed Ali", 59, 100001, "customer@gmail.com");
 // retailer1.display();
 // change the name 
-let test = new retailer("Ahammed Ali", 59, 100001, "customer@gmail.com");
+let test = new retailerTwo("Ahammed Ali", 59, 100001, "customer@gmail.com");
 test.setEmail("test@gmail.com");
 console.log(test.getEmail());
 console.log(test.name);

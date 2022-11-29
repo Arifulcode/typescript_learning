@@ -20,6 +20,6 @@ multiplication(30,20);
 division(30,20);
 
 
-let userName:string;
-userName= "Ariful Islam";
-console.log('userName'); 
+// let userName:string;
+// userName= "Ariful Islam";
+// console.log('userName'); 

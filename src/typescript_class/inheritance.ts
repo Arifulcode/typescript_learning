@@ -1,4 +1,4 @@
-class client{
+class clientAll{
     name:string;
     age:number;
 
@@ -7,12 +7,12 @@ class client{
         this.age = age;
     }
 
-    display():void {
+    displayOne():void {
         console.log(`client_name: ${this.name}, client_age: ${this.age}`);
     }
 }
 
-class customer extends client{
+class customerAll extends clientAll{
     customerId:number;
     email:string;
     // must be use constructor function
@@ -22,13 +22,13 @@ class customer extends client{
         this.email = email;
         
     }
-    display():void {
+    displayAll():void {
         console.log(`client_name: ${this.name}, client_age: ${this.age}, customer_id: ${this.customerId}, client_Email: ${this.email},`);
     }
 }
 
-let customer1 = new customer("Ahammed Ali", 59, 100001, "customer@gmail.com");
-customer1.display();
+let customer2 = new customerAll("Ahammed Ali", 59, 100001, "customer@gmail.com");
+customer2.displayAll();
 // let client2 = new client("Lilufa Yesmin", 42);
 // client2.display();
 // let client3 = new client("Ariful Islam", 29);

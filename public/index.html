@@ -4,15 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Ts</title>
 </head>
 <body>
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-4">one</div>
-            <div class="col-md-4">two</div>
-            <div class="col-md-4">three</div>
-        </div>
+        <h1>User Registration Form</h1>
+        <form action="#" class="user_form">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name">
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email">
+            </div>
+            <div>
+                <label for="country">Country:</label>
+                <select name="country" id="country">
+                    <option value="bangladesh">Bangladesh</option>
+                    <option value="india">India</option>
+                    <option value="pakisthan">Pakisthan</option>
+                    <option value="nepal">Nepal</option>
+                    <option value="bhutan">Bhutan</option>
+                </select>
+            </div>
+             <div>
+                <label for="feedback">Feedback:</label>
+                <textarea name="feedback" id="feedback" rows="5" cols="30"></textarea>
+            </div>
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
     </div>
+    <script type="text/javascript" src="../dist/index.js"></script>
 </body>
 </html>

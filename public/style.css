@@ -1,0 +1,17 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    background-color: antiquewhite;
+}
+
+div{
+    margin: .7rem;
+}
+input[type="text"]{
+    width: 20em;
+}
+
+input[type="email"]{
+    width: 20em;
+}

@@ -1,11 +1,11 @@
 "use strict";
 //User defined type : array, enum , classes, interface 
-let Id;
-Id = "1001";
-Id = 1001;
-Id = true;
-function displayPersonInfo(Id) {
-    console.log(Id);
+let hasId;
+hasId = "1001";
+hasId = 1001;
+hasId = true;
+function displayPersonInfo(hasId) {
+    console.log(hasId);
 }
 displayPersonInfo(1);
 displayPersonInfo("100");
